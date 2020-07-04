@@ -1,0 +1,801 @@
+
+
+ <DUALSPHYSICS4> Copyright (c) 2019 by
+ Dr Jose M. Dominguez, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira,  Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby, Dr Ricardo Canelas,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Orlando Garcia-Feal, Dr Jose Gonzalez Cao
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+
+DualSPHysics4 [Symmetry] v4.4.053 (19-01-2020)
+===============================================
+Threads by host for parallel execution: 8
+[Initialising JSphCpuSingle  21-06-2020 06:22:16]
+ProgramFile=".../dualsphysics/bin/DualSPHysics4.4_win64.exe"
+ExecutionDir=".../FreeCAD/Mod/DesignSPHysics"
+XmlFile=".../wave/wave_out/wave.xml"
+OutputDir=".../Desktop/wave/wave_out"
+OutputDataDir=".../Desktop/wave/wave_out"
+**Basic case configuration is loaded
+**Special case configuration is loaded
+Loading initial state of particles...
+Loaded particles: 2750
+MapRealPos(border)=(-0.102121,-0.00212132,-0.00212132)-(11.0021,0.00212132,0.692121)
+MapRealPos(final)=(-0.102121,-0.00212132,-0.00212132)-(11.0021,0.00212132,0.692121)
+**Initial state of particles is loaded
+**2D-Simulation parameters:
+CaseName="wave"
+RunName="wave"
+Simulate2DPosY=0
+Symmetry=False
+SavePosDouble=False
+SvTimers=True
+Boundary="DBC"
+StepAlgorithm="Symplectic"
+Kernel="Wendland"
+Viscosity="Artificial"
+  Visco=0.010000
+  ViscoBoundFactor=0.000000
+DensityDiffusion="None"
+Shifting="None"
+RigidAlgorithm="None"
+FloatingCount=0
+CaseNp=2750
+CaseNbound=305
+CaseNfixed=282
+CaseNmoving=23
+CaseNfloat=0
+CaseNfluid=2445
+PeriodicActive="None"
+Dx=0.03
+H=0.042426
+CoefficientH=1
+CteB=201805.718750
+Gamma=7.000000
+RhopZero=1000.000000
+Cs0=37.5851
+CFLnumber=0.200000
+DtIni=0.00112881
+DtMin=5.64405e-05
+DtAllParticles=False
+MassFluid=0.900000
+MassBound=0.900000
+Awen (Wendland)=309.444427
+Bwen (Wendland)=-36470.996094
+TimeMax=8
+TimePart=0.025
+Gravity=(0.000000,0.000000,-9.810000)
+NpMinimum=305
+RhopOut=True
+RhopOutMin=700.000000
+RhopOutMax=1300.000000
+WrnPartsOut=True
+**Requested CPU memory for 2760 particles: 0.4 MB.
+CellMode="2H"
+Hdiv=1
+MapCells=(131,1,9)
+DomCells=(131,1,9)
+DomCellCode="15_8_10"
+**CellDiv: Requested cpu memory for 2897 particles: 0.1 MB.
+**CellDiv: Requested cpu memory for 1288 cells (CellMode=2H): 0.0 MB.
+ 
+RunMode="Pos-Double - OpenMP(Threads:8)"
+ 
+Particle summary:
+  Fixed....: 282  id:(0-281)   MKs:1 (11)
+  Moving...: 23  id:(282-304)   MKs:1 (12)
+  Floating.: 0
+  Fluid....: 2445  id:(305-2749)   MKs:2 (1,4)
+
+Total particles: 2750 (bound=305 (fx=282 mv=23 ft=0) fluid=2445)
+Total MK blocks: 4 (bound=2 (fx=1 mv=1 ft=0) fluid=2)
+ 
+Wave paddles configuration:
+**Saving motion paddle in .../Desktop/wave/wave_out/WavePaddle_mkb0002.csv
+Paddle_0 (mkb:2)
+  Type of paddle: Piston - Regular
+  Movement direction: (1:0:0) [m]
+  Start time: 0 [s]  (end: 8 [s])
+  Particles: 282 - 304
+  Depth: 0.4 [m]
+  InitialPhase: 0 times PI
+  InitialRamp: 0 periods
+  WaveOrder: 2nd
+  WaveHeight: 0.1 [m]
+  WavePeriod: 1.2 [s]
+  WaveLength: 1.93625 [m]
+  Relative depth (d/L): 0.206585  (Transitional water)
+  GainStroke: 1
+  Stroke: 0.0806616
+  Amplitude: 0.0403308 [m]
+ 
+Allocated memory in CPU: 590088 (0.56 MB)
+Part_0000        2750 particles successfully stored
+
+[Initialising simulation (s8grcvdi)  21-06-2020 06:22:16]
+PART       PartTime      TotalSteps    Steps    Time/Sec   Finish time        
+=========  ============  ============  =======  =========  ===================
+Part_0001      0.025012           108      108     304.89  21-06-2020 07:02:55
+  Particles out: 137  (total out: 137)  -  Current np: 2613
+
+*** WARNING: More than 1% of current fluid particles were excluded in one PART (t:0.0250121, nstep:107)
+
+Part_0002      0.050214           221      113     450.94  21-06-2020 07:12:41
+Part_0003      0.075097           333      112     157.62  21-06-2020 07:02:56
+  Particles out: 14  (total out: 151)  -  Current np: 2599
+Part_0004      0.100053           446      113     385.33  21-06-2020 07:05:36
+  Particles out: 126  (total out: 277)  -  Current np: 2473
+
+*** WARNING: More than 2% of current fluid particles were excluded in one PART (t:0.100053, nstep:445)
+
+
+*** WARNING: More than 10% of particles were excluded (t:0.100053, nstep:445)
+
+Part_0005      0.125147           560      114     414.38  21-06-2020 07:08:00
+  Particles out: 131  (total out: 408)  -  Current np: 2342
+
+*** WARNING: More than 5% of current fluid particles were excluded in one PART (t:0.125147, nstep:559)
+
+Part_0006      0.150144           674      114     115.89  21-06-2020 07:02:57
+  Particles out: 135  (total out: 543)  -  Current np: 2207
+Part_0007      0.175217           792      118     535.88  21-06-2020 07:07:21
+  Particles out: 166  (total out: 709)  -  Current np: 2041
+
+*** WARNING: More than 20% of particles were excluded (t:0.175217, nstep:791)
+
+Part_0008      0.200019           906      114     476.52  21-06-2020 07:09:38
+  Particles out: 226  (total out: 935)  -  Current np: 1815
+
+*** WARNING: More than 30% of particles were excluded (t:0.200019, nstep:905)
+
+Part_0009      0.225002          1022      116     116.86  21-06-2020 07:06:07
+  Particles out: 250  (total out: 1185)  -  Current np: 1565
+
+*** WARNING: More than 10% of current fluid particles were excluded in one PART (t:0.225002, nstep:1021)
+
+
+*** WARNING: More than 40% of particles were excluded (t:0.225002, nstep:1021)
+
+Part_0010      0.250118          1142      120     450.06  21-06-2020 07:07:44
+  Particles out: 248  (total out: 1433)  -  Current np: 1317
+
+*** WARNING: More than 50% of particles were excluded (t:0.250118, nstep:1141)
+
+Part_0011      0.275073          1261      119      27.07  21-06-2020 07:03:56
+  Particles out: 257  (total out: 1690)  -  Current np: 1060
+
+*** WARNING: More than 60% of particles were excluded (t:0.275073, nstep:1260)
+
+Part_0012      0.300036          1382      121     448.62  21-06-2020 07:05:26
+  Particles out: 36  (total out: 1726)  -  Current np: 1024
+Part_0013      0.325000          1500      118      22.08  21-06-2020 07:02:21
+  Particles out: 14  (total out: 1740)  -  Current np: 1010
+Part_0014      0.350009          1619      119     224.01  21-06-2020 07:01:37
+  Particles out: 7  (total out: 1747)  -  Current np: 1003
+Part_0015      0.375088          1737      118     242.94  21-06-2020 07:01:09
+  Particles out: 8  (total out: 1755)  -  Current np: 995
+Part_0016      0.400029          1854      117      55.18  21-06-2020 06:59:12
+  Particles out: 8  (total out: 1763)  -  Current np: 987
+Part_0017      0.425163          1975      121     420.84  21-06-2020 07:00:19
+  Particles out: 7  (total out: 1770)  -  Current np: 980
+Part_0018      0.450059          2091      116     360.75  21-06-2020 07:00:52
+  Particles out: 5  (total out: 1775)  -  Current np: 975
+Part_0019      0.475035          2210      119     143.42  21-06-2020 06:59:51
+  Particles out: 9  (total out: 1784)  -  Current np: 966
+Part_0020      0.500109          2329      119      27.20  21-06-2020 06:58:09
+  PPart_0020      0.500054          3589      181     355.8Part_0021      0.525019          2445      116     471.67  21-06-2020 06:59:25
+  ParPart_0021      0.525015          3768      179     523.21  21-06-2020 07:24:45
+  Particles out: 12  (total out: 4143)  -  Current np: 2101
+Part_0022      0.550089          3946      178     119.20  21-06-2020 07:22:33
+  Particles out: 13  (total out: 4156)  -  Current np: 2088
+Part_0023      0.575017          4124      178     460.71  21-06-2020 07:22:32
+  Particles out: 14  (total out: 4170)  -  Current np: 2074
+Part_0024      0.600039          4305      181     163.15  21-06-2020 07:20:51
+  Particles out: 15  (total out: 4185)  -  Current np: 2059
+Part_0025      0.625090          4487      182     326.78  21-06-2020 07:20:11
+  Particles out: 12  (total out: 4197)  -  Current np: 2047
+Part_0026      0.650029          4667      180     460.97  21-06-2020 07:20:16
+  Particles out: 16  (total out: 4213)  -  Current np: 2031
+Part_0027      0.675009          4848      181     125.05  21-06-2020 07:18:40
+  Particles out: 12  (total out: 4225)  -  Current np: 2019
+Part_0028      0.700058          5029      181     371.86  21-06-2020 07:18:22
+  Particles out: 8  (total out: 4233)  -  Current np: 2011
+Part_0029      0.725013          5210      181     467.96  21-06-2020 07:18:32
+  Particles out: 11  (total out: 4244)  -  Current np: 2000
+Part_0030      0.750052          5393      183      35.72  21-06-2020 07:16:46
+  Particles out: 13  (total out: 4257)  -  Current np: 1987
+Part_0031      0.775099          5577      184     452.44  21-06-2020 07:16:53
+  Particles out: 17  (total out: 4274)  -  Current np: 1970
+Part_0032      0.800050          5758      181     257.37  21-06-2020 07:16:13
+  Particles out: 12  (total out: 4286)  -  Current np: 1958
+Part_0033      0.825049          5940      182     234.17  21-06-2020 07:15:29
+  Particles out: 13  (total out: 4299)  -  Current np: 1945
+Part_0034      0.850123          6123      183     460.88  21-06-2020 07:15:40
+  Particles out: 14  (total out: 4313)  -  Current np: 1931
+Part_0035      0.875081          6302      179      35.81  21-06-2020 07:14:14
+  Particles out: 13  (total out: 4326)  -  Current np: 1918
+Part_0036      0.900048          6486      184     460.55  21-06-2020 07:14:27
+  Particles out: 11  (total out: 4337)  -  Current np: 1907
+Part_0037      0.925003          6666      180     486.55  21-06-2020 07:14:45
+  Particles out: 14  (total out: 4351)  -  Current np: 1893
+Part_0038      0.950063          6847      181      29.68  21-06-2020 07:13:25
+  Particles out: 19  (total out: 4370)  -  Current np: 1874
+Part_0039      0.975047          7027      180     470.58  21-06-2020 07:13:41
+  Particles out: 15  (total out: 4385)  -  Current np: 1859
+
+*** WARNING: More than 70% of particles were excluded (t:0.975047, nstep:7026)
+
+Part_0040      1.000048          7206      179      91.46  21-06-2020 07:12:39
+  Particles out: 14  (total out: 4399)  -  Current np: 1845
+Part_0041      1.025134          7394      188     406.74  21-06-2020 07:12:43
+  Particles out: 10  (total out: 4409)  -  Current np: 1835
+Part_0042      1.050058          7576      182     425.78  21-06-2020 07:12:50
+  Particles out: 10  (total out: 4419)  -  Current np: 1825
+Part_0043      1.075083          7759      183     421.25  21-06-2020 07:12:56
+  Particles out: 10  (total out: 4429)  -  Current np: 1815
+Part_0044      1.100049          7941      182     137.10  21-06-2020 07:12:09
+  Particles out: 9  (total out: 4438)  -  Current np: 1806
+Part_0045      1.125012          8123      182     470.98  21-06-2020 07:12:24
+  Particles out: 10  (total out: 4448)  -  Current np: 1796
+Part_0046      1.150129          8304      181      73.99  21-06-2020 07:11:29
+  Particles out: 7  (total out: 4455)  -  Current np: 1789
+Part_0047      1.175050          8487      183     428.67  21-06-2020 07:11:38
+  Particles out: 13  (total out: 4468)  -  Current np: 1776
+Part_0048      1.200131          8668      181     463.30  21-06-2020 07:11:51
+  Particles out: 14  (total out: 4482)  -  Current np: 1762
+Part_0049      1.225041          8847      179      32.31  21-06-2020 07:10:54
+  Particles out: 12  (total out: 4494)  -  Current np: 1750
+Part_0050      1.250042          9027      180     447.52  21-06-2020 07:11:05
+  Particles out: 12  (total out: 4506)  -  Current np: 1738
+Part_0051      1.275105          9208      181      59.09  21-06-2020 07:10:15
+  Particles out: 14  (total out: 4520)  -  Current np: 1724
+Part_0052      1.300078          9391      183     416.59  21-06-2020 07:10:22
+  Particles out: 14  (total out: 4534)  -  Current np: 1710
+Part_0053      1.325059          9573      182     178.15  21-06-2020 07:09:52
+  Particles out: 14  (total out: 4548)  -  Current np: 1696
+Part_0054      1.350039          9754      181     331.39  21-06-2020 07:09:47
+  Particles out: 11  (total out: 4559)  -  Current np: 1685
+Part_0055      1.375017          9934      180     445.26  21-06-2020 07:09:58
+  Particles out: 9  (total out: 4568)  -  Current np: 1676
+Part_0056      1.400140         10114      180     176.39  21-06-2020 07:09:30
+  Particles out: 13  (total out: 4581)  -  Current np: 1663
+Part_0057      1.425082         10295      181     314.28  21-06-2020 07:09:23
+  Particles out: 13  (total out: 4594)  -  Current np: 1650
+Part_0058      1.450006         10472      177     461.72  21-06-2020 07:09:36
+  Particles out: 13  (total out: 4607)  -  Current np: 1637
+Part_0059      1.475043         10652      180      26.57  21-06-2020 07:08:49
+  Particles out: 15  (total out: 4622)  -  Current np: 1622
+Part_0060      1.500136         10833      181     455.44  21-06-2020 07:09:03
+  Particles out: 5  (total out: 4627)  -  Current np: 1617
+Part_0061      1.525121         11013      180      26.35  21-06-2020 07:08:18
+  Particles out: 11  (total out: 4638)  -  Current np: 1606
+Part_0062      1.550094         11192      179     471.83  21-06-2020 07:08:33
+  Particles out: 11  (total out: 4649)  -  Current np: 1595
+Part_0063      1.575042         11373      181     268.00  21-06-2020 07:08:21
+  Particles out: 12  (total out: 4661)  -  Current np: 1583
+Part_0064      1.600069         11558      185     254.60  21-06-2020 07:08:08
+  Particles out: 10  (total out: 4671)  -  Current np: 1573
+Part_0065      1.625043         11740      182     120.04  21-06-2020 07:07:39
+  Particles out: 7  (total out: 4678)  -  Current np: 1566
+Part_0066      1.650001         11920      180     368.59  21-06-2020 07:07:41
+  Particles out: 11  (total out: 4689)  -  Current np: 1555
+Part_0067      1.675001         12103      183     454.85  21-06-2020 07:07:54
+  Particles out: 10  (total out: 4699)  -  Current np: 1545
+Part_0068      1.700083         12285      182      37.02  21-06-2020 07:07:16
+  Particles out: 8  (total out: 4707)  -  Current np: 1537
+Part_0069      1.725019         12468      183     459.04  21-06-2020 07:07:29
+  Particles out: 8  (total out: 4715)  -  Current np: 1529
+Part_0070      1.750101         12652      184     221.13  21-06-2020 07:07:14
+  Particles out: 7  (total out: 4722)  -  Current np: 1522
+Part_0071      1.775006         12831      179     258.21  21-06-2020 07:07:03
+  Particles out: 16  (total out: 4738)  -  Current np: 1506
+Part_0072      1.800028         13011      180     253.64  21-06-2020 07:06:53
+  Particles out: 11  (total out: 4749)  -  Current np: 1495
+Part_0073      1.825112         13194      183     228.39  21-06-2020 07:06:40
+  Particles out: 11  (total out: 4760)  -  Current np: 1484
+Part_0074      1.850010         13376      182      33.62  21-06-2020 07:06:06
+  Particles out: 8  (total out: 4768)  -  Current np: 1476
+Part_0075      1.875092         13559      183     442.05  21-06-2020 07:06:17
+  Particles out: 5  (total out: 4773)  -  Current np: 1471
+Part_0076      1.900106         13743      184     260.76  21-06-2020 07:06:09
+  Particles out: 8  (total out: 4781)  -  Current np: 1463
+Part_0077      1.925094         13930      187     223.07  21-06-2020 07:05:56
+  Particles out: 9  (total out: 4790)  -  Current np: 1454
+Part_0078      1.950031         14115      185     408.70  21-06-2020 07:06:03
+  Particles out: 11  (total out: 4801)  -  Current np: 1443
+Part_0079      1.975110         14299      184      78.77  21-06-2020 07:05:36
+  Particles out: 6  (total out: 4807)  -  Current np: 1437
+Part_0080      2.000051         14484      185     454.29  21-06-2020 07:05:49
+  Particles out: 6  (total out: 4813)  -  Current np: 1431
+Part_0081      2.025021         14666      182      33.66  21-06-2020 07:05:19
+  Particles out: 9  (total out: 4822)  -  Current np: 1422
+Part_0082      2.050064         14849      183     467.26  21-06-2020 07:05:31
+  Particles out: 12  (total out: 4834)  -  Current np: 1410
+Part_0083      2.075123         15034      185     285.41  21-06-2020 07:05:26
+  Particles out: 10  (total out: 4844)  -  Current np: 1400
+Part_0084      2.100127         15217      183     192.99  21-06-2020 07:05:13
+  Particles out: 9  (total out: 4853)  -  Current np: 1391
+Part_0085      2.125026         15398      181     187.54  21-06-2020 07:04:59
+  Particles out: 8  (total out: 4861)  -  Current np: 1383
+Part_0086      2.150122         15583      185     292.66  21-06-2020 07:04:55
+  Particles out: 13  (total out: 4874)  -  Current np: 1370
+Part_0087      2.175066         15765      182     372.62  21-06-2020 07:05:00
+  Particles out: 8  (total out: 4882)  -  Current np: 1362
+Part_0088      2.200112         15948      183     119.53  21-06-2020 07:04:40
+  Particles out: 11  (total out: 4893)  -  Current np: 1351
+Part_0089      2.225084         16132      184     369.66  21-06-2020 07:04:43
+  Particles out: 9  (total out: 4902)  -  Current np: 1342
+Part_0090      2.250029         16315      183     126.80  21-06-2020 07:04:25
+  Particles out: 13  (total out: 4915)  -  Current np: 1329
+Part_0091      2.275131         16504      189     472.24  21-06-2020 07:04:38
+  Particles out: 7  (total out: 4922)  -  Current np: 1322
+Part_0092      2.300074         16687      183     487.54  21-06-2020 07:04:52
+  Particles out: 7  (total out: 4929)  -  Current np: 1315
+Part_0093      2.325003         16872      185      33.06  21-06-2020 07:04:26
+  Particles out: 7  (total out: 4936)  -  Current np: 1308
+Part_0094      2.350011         17057      185     443.12  21-06-2020 07:04:36
+  Particles out: 7  (total out: 4943)  -  Current np: 1301
+Part_0095      2.375134         17241      184      35.03  21-06-2020 07:04:11
+  Particles out: 7  (total out: 4950)  -  Current np: 1294
+Part_0096      2.400009         17420      179     440.94  21-06-2020 07:04:21
+  Particles out: 8  (total out: 4958)  -  Current np: 1286
+Part_0097      2.425027         17603      183      35.63  21-06-2020 07:03:57
+  Particles out: 10  (total out: 4968)  -  Current np: 1276
+Part_0098      2.450113         17786      183     442.99  21-06-2020 07:04:06
+  Particles out: 3  (total out: 4971)  -  Current np: 1273
+Part_0099      2.475044         17971      185      19.35  21-06-2020 07:03:41
+  Particles out: 12  (total out: 4983)  -  Current np: 1261
+Part_0100      2.500125         18155      184     473.25  21-06-2020 07:03:53
+  Particles out: 8  (total out: 4991)  -  Current np: 1253
+Part_0101      2.525024         18337      182     314.91  21-06-2020 07:03:53
+  Particles out: 10  (total out: 5001)  -  Current np: 1243
+
+*** WARNING: More than 80% of particles were excluded (t:2.52502, nstep:18336)
+
+Part_0102      2.550042         18522      185     170.20  21-06-2020 07:03:40
+  Particles out: 9  (total out: 5010)  -  Current np: 1234
+Part_0103      2.575095         18704      182     438.47  21-06-2020 07:03:49
+  Particles out: 4  (total out: 5014)  -  Current np: 1230
+Part_0104      2.600120         18888      184      17.41  21-06-2020 07:03:26
+  Particles out: 2  (total out: 5016)  -  Current np: 1228
+Part_0105      2.625015         19071      183     468.41  21-06-2020 07:03:37
+  Particles out: 4  (total out: 5020)  -  Current np: 1224
+Part_0106      2.650070         19257      186      21.29  21-06-2020 07:03:14
+  Particles out: 8  (total out: 5028)  -  Current np: 1216
+Part_0107      2.675047         19442      185     474.06  21-06-2020 07:03:26
+  Particles out: 8  (total out: 5036)  -  Current np: 1208
+Part_0108      2.700001         19625      183      18.57  21-06-2020 07:03:03
+  Particles out: 9  (total out: 5045)  -  Current np: 1199
+Part_0109      2.725057         19810      185     437.46  21-06-2020 07:03:12
+  Particles out: 9  (total out: 5054)  -  Current np: 1190
+Part_0110      2.750124         19999      189      17.22  21-06-2020 07:02:50
+  Particles out: 11  (total out: 5065)  -  Current np: 1179
+Part_0111      2.775032         20183      184     340.24  21-06-2020 07:02:52
+  Particles out: 3  (total out: 5068)  -  Current np: 1176
+Part_0112      2.800040         20366      183     155.32  21-06-2020 07:02:41
+  Particles out: 8  (total out: 5076)  -  Current np: 1168
+Part_0113      2.825108         20549      183     445.38  21-06-2020 07:02:50
+  Particles out: 9  (total out: 5085)  -  Current np: 1159
+Part_0114      2.850097         20731      182     276.44  21-06-2020 07:02:47
+  Particles out: 2  (total out: 5087)  -  Current np: 1157
+Part_0115      2.875093         20917      186     194.96  21-06-2020 07:02:39
+  Particles out: 7  (total out: 5094)  -  Current np: 1150
+Part_0116      2.900016         21102      185     449.14  21-06-2020 07:02:48
+  Particles out: 5  (total out: 5099)  -  Current np: 1145
+Part_0117      2.925102         21285      183      73.90  21-06-2020 07:02:31
+  Particles out: 6  (total out: 5105)  -  Current np: 1139
+Part_0118      2.950017         21466      181     395.74  21-06-2020 07:02:37
+  Particles out: 10  (total out: 5115)  -  Current np: 1129
+Part_0119      2.975007         21652      186     459.16  21-06-2020 07:02:46
+  Particles out: 10  (total out: 5125)  -  Current np: 1119
+Part_0120      3.000038         21836      184     404.98  21-06-2020 07:02:52
+  Particles out: 6  (total out: 5131)  -  Current np: 1113
+Part_0121      3.025004         22019      183      83.12  21-06-2020 07:02:36
+  Particles out: 8  (total out: 5139)  -  Current np: 1105
+Part_0122      3.050001         22205      186     455.78  21-06-2020 07:02:46
+  Particles out: 5  (total out: 5144)  -  Current np: 1100
+Part_0123      3.075120         22392      187      21.68  21-06-2020 07:02:26
+  Particles out: 2  (total out: 5146)  -  Current np: 1098
+Part_0124      3.100094         22574      182     456.65  21-06-2020 07:02:36
+  Particles out: 14  (total out: 5160)  -  Current np: 1084
+Part_0125      3.125104         22759      185     465.06  21-06-2020 07:02:45
+  Particles out: 5  (total out: 5165)  -  Current np: 1079
+Part_0126      3.150077         22944      185      15.84  21-06-2020 07:02:27
+  Particles out: 7  (total out: 5172)  -  Current np: 1072
+Part_0127      3.175121         23127      183     452.48  21-06-2020 07:02:35
+  Particles out: 6  (total out: 5178)  -  Current np: 1066
+Part_0128      3.200004         23309      182      18.33  21-06-2020 07:02:17
+  Particles out: 5  (total out: 5183)  -  Current np: 1061
+Part_0129      3.225090         23494      185     456.62  21-06-2020 07:02:26
+  Particles out: 7  (total out: 5190)  -  Current np: 1054
+Part_0130      3.250044         23676      182      49.97  21-06-2020 07:02:10
+  Particles out: 6  (total out: 5196)  -  Current np: 1048
+Part_0131      3.275061         23859      183     418.97  21-06-2020 07:02:17
+  Particles out: 3  (total out: 5199)  -  Current np: 1045
+Part_0132      3.300105         24041      182     451.69  21-06-2020 07:02:25
+  Particles out: 6  (total out: 5205)  -  Current np: 1039
+Part_0133      3.325100         24223      182      28.80  21-06-2020 07:02:08
+  Particles out: 9  (total out: 5214)  -  Current np: 1030
+Part_0134      3.350016         24405      182     444.78  21-06-2020 07:02:16
+  Particles out: 7  (total out: 5221)  -  Current np: 1023
+Part_0135      3.375072         24589      184      26.17  21-06-2020 07:01:59
+  Particles out: 7  (total out: 5228)  -  Current np: 1016
+Part_0136      3.400101         24776      187     454.70  21-06-2020 07:02:07
+  Particles out: 5  (total out: 5233)  -  Current np: 1011
+Part_0137      3.425087         24961      185      17.13  21-06-2020 07:01:50
+  Particles out: 2  (total out: 5235)  -  Current np: 1009
+Part_0138      3.450123         25146      185     492.28  21-06-2020 07:02:01
+  Particles out: 3  (total out: 5238)  -  Current np: 1006
+Part_0139      3.475109         25330      184      12.12  21-06-2020 07:01:44
+Part_0140      3.500050         25514      184      11.01  21-06-2020 07:01:26
+  Particles out: 8  (total out: 5246)  -  Current np: 998
+Part_0141      3.525097         25703      189       9.70  21-06-2020 07:01:09
+  Particles out: 3  (total out: 5249)  -  Current np: 995
+Part_0142      3.550006         25885      182      16.27  21-06-2020 07:00:54
+  Particles out: 3  (total out: 5252)  -  Current np: 992
+Part_0143      3.575062         26070      185     479.08  21-06-2020 07:01:04
+  Particles out: 10  (total out: 5262)  -  Current np: 982
+Part_0144      3.600018         26259      189      25.83  21-06-2020 07:00:49
+  Particles out: 7  (total out: 5269)  -  Current np: 975
+Part_0145      3.625099         26445      186     472.53  21-06-2020 07:00:57
+  Particles out: 5  (total out: 5274)  -  Current np: 970
+Part_0146      3.650104         26629      184      14.94  21-06-2020 07:00:42
+  Particles out: 4  (total out: 5278)  -  Current np: 966
+Part_0147      3.675044         26814      185     470.43  21-06-2020 07:00:51
+  Particles out: 9  (total out: 5287)  -  Current np: 957
+Part_0148      3.700102         27000      186      15.01  21-06-2020 07:00:36
+Part_0149      3.725103         27185      185     466.23  21-06-2020 07:00:45
+  Particles out: 5  (total out: 5292)  -  Current np: 952
+Part_0150      3.750030         27373      188      17.48  21-06-2020 07:00:30
+  Particles out: 6  (total out: 5298)  -  Current np: 946
+Part_0151      3.775057         27558      185     396.85  21-06-2020 07:00:35
+  Particles out: 2  (total out: 5300)  -  Current np: 944
+Part_0152      3.800066         27742      184     113.35  21-06-2020 07:00:25
+  Particles out: 6  (total out: 5306)  -  Current np: 938
+Part_0153      3.825086         27928      186     450.16  21-06-2020 07:00:33
+  Particles out: 4  (total out: 5310)  -  Current np: 934
+Part_0154      3.850024         28109      181      14.34  21-06-2020 07:00:18
+  Particles out: 6  (total out: 5316)  -  Current np: 928
+Part_0155      3.875054         28293      184     455.29  21-06-2020 07:00:27
+  Particles out: 3  (total out: 5319)  -  Current np: 925
+Part_0156      3.900088         28479      186      14.17  21-06-2020 07:00:12
+  Particles out: 4  (total out: 5323)  -  Current np: 921
+Part_0157      3.925001         28663      184     459.70  21-06-2020 07:00:20
+  Particles out: 1  (total out: 5324)  -  Current np: 920
+Part_0158      3.950060         28848      185      14.26  21-06-2020 07:00:06
+  Particles out: 9  (total out: 5333)  -  Current np: 911
+Part_0159      3.975036         29031      183     448.71  21-06-2020 07:00:13
+  Particles out: 3  (total out: 5336)  -  Current np: 908
+Part_0160      4.000108         29213      182      24.65  21-06-2020 07:00:00
+  Particles out: 3  (total out: 5339)  -  Current np: 905
+Part_0161      4.025051         29396      183      81.73  21-06-2020 06:59:49
+  Particles out: 7  (total out: 5346)  -  Current np: 898
+Part_0162      4.050052         29576      180     399.75  21-06-2020 06:59:54
+Part_0163      4.075084         29762      186      16.91  21-06-2020 06:59:40
+  Particles out: 6  (total out: 5352)  -  Current np: 892
+Part_0164      4.100081         29947      185     468.46  21-06-2020 06:59:49
+  Particles out: 5  (total out: 5357)  -  Current np: 887
+Part_0165      4.125069         30131      184      18.27  21-06-2020 06:59:35
+  Particles out: 4  (total out: 5361)  -  Current np: 883
+Part_0166      4.150036         30318      187     473.91  21-06-2020 06:59:44
+  Particles out: 4  (total out: 5365)  -  Current np: 879
+Part_0167      4.175079         30502      184      13.87  21-06-2020 06:59:32
+  Particles out: 4  (total out: 5369)  -  Current np: 875
+Part_0168      4.200029         30685      183     457.69  21-06-2020 06:59:39
+  Particles out: 1  (total out: 5370)  -  Current np: 874
+Part_0169      4.225107         30867      182      13.66  21-06-2020 06:59:26
+  Particles out: 3  (total out: 5373)  -  Current np: 871
+Part_0170      4.250061         31053      186     469.72  21-06-2020 06:59:34
+  Particles out: 2  (total out: 5375)  -  Current np: 869
+Part_0171      4.275087         31237      184      13.93  21-06-2020 06:59:21
+  Particles out: 8  (total out: 5383)  -  Current np: 861
+Part_0172      4.300050         31423      186     470.91  21-06-2020 06:59:29
+  Particles out: 5  (total out: 5388)  -  Current np: 856
+Part_0173      4.325073         31607      184       7.24  21-06-2020 06:59:16
+  Particles out: 3  (total out: 5391)  -  Current np: 853
+Part_0174      4.350085         31795      188     123.92  21-06-2020 06:59:08
+Part_0175      4.375116         31979      184     362.98  21-06-2020 06:59:12
+  Particles out: 5  (total out: 5396)  -  Current np: 848
+Part_0176      4.400006         32167      188      29.16  21-06-2020 06:59:00
+  Particles out: 5  (total out: 5401)  -  Current np: 843
+Part_0177      4.425077         32352      185     446.06  21-06-2020 06:59:07
+  Particles out: 2  (total out: 5403)  -  Current np: 841
+Part_0178      4.450028         32535      183      15.61  21-06-2020 06:58:56
+  Particles out: 2  (total out: 5405)  -  Current np: 839
+Part_0179      4.475015         32718      183     400.24  21-06-2020 06:59:01
+  Particles out: 4  (total out: 5409)  -  Current np: 835
+Part_0180      4.500089         32903      185      88.45  21-06-2020 06:58:52
+  Particles out: 7  (total out: 5416)  -  Current np: 828
+Part_0181      4.525003         33085      182     123.02  21-06-2020 06:58:44
+  Particles out: 6  (total out: 5422)  -  Current np: 822
+Part_0182      4.550122         33271      186     336.58  21-06-2020 06:58:47
+  Particles out: 4  (total out: 5426)  -  Current np: 818
+Part_0183      4.575040         33453      182     176.01  21-06-2020 06:58:42
+  Particles out: 5  (total out: 5431)  -  Current np: 813
+Part_0184      4.600134         33638      185     294.53  21-06-2020 06:58:42
+  Particles out: 3  (total out: 5434)  -  Current np: 810
+Part_0185      4.625059         33821      183      27.29  21-06-2020 06:58:31
+  Particles out: 4  (total out: 5438)  -  Current np: 806
+Part_0186      4.650116         34004      183     463.50  21-06-2020 06:58:39
+  Particles out: 4  (total out: 5442)  -  Current np: 802
+Part_0187      4.675041         34191      187      16.76  21-06-2020 06:58:27
+  Particles out: 4  (total out: 5446)  -  Current np: 798
+Part_0188      4.700102         34375      184     439.22  21-06-2020 06:58:34
+  Particles out: 4  (total out: 5450)  -  Current np: 794
+Part_0189      4.725124         34559      184      52.31  21-06-2020 06:58:24
+  Particles out: 3  (total out: 5453)  -  Current np: 791
+Part_0190      4.750123         34741      182     469.98  21-06-2020 06:58:32
+  Particles out: 1  (total out: 5454)  -  Current np: 790
+Part_0191      4.775070         34923      182       6.41  21-06-2020 06:58:20
+  Particles out: 3  (total out: 5457)  -  Current np: 787
+Part_0192      4.800117         35107      184      17.10  21-06-2020 06:58:10
+  Particles out: 4  (total out: 5461)  -  Current np: 783
+Part_0193      4.825059         35288      181     455.25  21-06-2020 06:58:17
+  Particles out: 3  (total out: 5464)  -  Current np: 780
+Part_0194      4.850125         35471      183      13.08  21-06-2020 06:58:05
+Part_0195      4.875039         35652      181     464.66  21-06-2020 06:58:13
+  Particles out: 3  (total out: 5467)  -  Current np: 777
+Part_0196      4.900096         35834      182      16.37  21-06-2020 06:58:02
+  Particles out: 3  (total out: 5470)  -  Current np: 774
+Part_0197      4.925031         36018      184     424.46  21-06-2020 06:58:08
+  Particles out: 5  (total out: 5475)  -  Current np: 769
+Part_0198      4.950131         36202      184     265.28  21-06-2020 06:58:08
+Part_0199      4.975038         36384      182     296.10  21-06-2020 06:58:08
+Part_0200      5.000030         36567      183     404.73  21-06-2020 06:58:13
+  Particles out: 4  (total out: 5479)  -  Current np: 765
+Part_0201      5.025099         36750      183      94.62  21-06-2020 06:58:05
+  Particles out: 4  (total out: 5483)  -  Current np: 761
+Part_0202      5.050028         36932      182     323.08  21-06-2020 06:58:07
+  Particles out: 3  (total out: 5486)  -  Current np: 758
+Part_0203      5.075044         37112      180     154.37  21-06-2020 06:58:02
+  Particles out: 5  (total out: 5491)  -  Current np: 753
+Part_0204      5.100007         37294      182     382.59  21-06-2020 06:58:06
+Part_0205      5.125094         37480      186      93.15  21-06-2020 06:57:58
+  Particles out: 3  (total out: 5494)  -  Current np: 750
+Part_0206      5.150005         37663      183       4.27  21-06-2020 06:57:48
+  Particles out: 1  (total out: 5495)  -  Current np: 749
+Part_0207      5.175051         37846      183     440.52  21-06-2020 06:57:54
+  Particles out: 2  (total out: 5497)  -  Current np: 747
+Part_0208      5.200011         38028      182       3.67  21-06-2020 06:57:43
+  Particles out: 2  (total out: 5499)  -  Current np: 745
+Part_0209      5.225038         38212      184       3.70  21-06-2020 06:57:34
+  Particles out: 4  (total out: 5503)  -  Current np: 741
+Part_0210      5.250052         38395      183       3.69  21-06-2020 06:57:23
+  Particles out: 2  (total out: 5505)  -  Current np: 739
+Part_0211      5.275095         38581      186       3.86  21-06-2020 06:57:13
+  Particles out: 5  (total out: 5510)  -  Current np: 734
+Part_0212      5.300074         38764      183       8.75  21-06-2020 06:57:02
+  Particles out: 5  (total out: 5515)  -  Current np: 729
+Part_0213      5.325043         38945      181       3.37  21-06-2020 06:56:52
+  Particles out: 2  (total out: 5517)  -  Current np: 727
+Part_0214      5.350039         39125      180       8.90  21-06-2020 06:56:42
+Part_0215      5.375036         39310      185       6.49  21-06-2020 06:56:32
+Part_0216      5.400061         39495      185     430.77  21-06-2020 06:56:38
+Part_0217      5.425007         39678      183       3.67  21-06-2020 06:56:29
+Part_0218      5.450128         39862      184       3.73  21-06-2020 06:56:19
+Part_0219      5.475051         40044      182       3.73  21-06-2020 06:56:09
+Part_0220      5.500085         40228      184       3.33  21-06-2020 06:56:00
+  Particles out: 1  (total out: 5518)  -  Current np: 726
+Part_0221      5.525020         40411      183       3.28  21-06-2020 06:55:51
+  Particles out: 11  (total out: 5529)  -  Current np: 715
+Part_0222      5.550050         40594      183       8.36  21-06-2020 06:55:41
+  Particles out: 4  (total out: 5533)  -  Current np: 711
+Part_0223      5.575125         40777      183       3.24  21-06-2020 06:55:32
+  Particles out: 4  (total out: 5537)  -  Current np: 707
+Part_0224      5.600062         40957      180       8.97  21-06-2020 06:55:23
+Part_0225      5.625132         41138      181       5.43  21-06-2020 06:55:13
+Part_0226      5.650073         41320      182     437.83  21-06-2020 06:55:20
+Part_0227      5.675065         41503      183       3.46  21-06-2020 06:55:11
+  Particles out: 5  (total out: 5542)  -  Current np: 702
+Part_0228      5.700058         41686      183       3.49  21-06-2020 06:55:02
+Part_0229      5.725054         41867      181       3.12  21-06-2020 06:54:53
+Part_0230      5.750102         42050      183       3.17  21-06-2020 06:54:45
+Part_0231      5.775048         42234      184       8.08  21-06-2020 06:54:36
+Part_0232      5.800086         42422      188       3.40  21-06-2020 06:54:27
+  Particles out: 2  (total out: 5544)  -  Current np: 700
+Part_0233      5.825019         42608      186       8.33  21-06-2020 06:54:19
+  Particles out: 2  (total out: 5546)  -  Current np: 698
+Part_0234      5.850107         42794      186       3.62  21-06-2020 06:54:10
+  Particles out: 5  (total out: 5551)  -  Current np: 693
+Part_0235      5.875057         42977      183     439.65  21-06-2020 06:54:16
+  Particles out: 5  (total out: 5556)  -  Current np: 688
+Part_0236      5.900093         43159      182       3.27  21-06-2020 06:54:08
+  Particles out: 3  (total out: 5559)  -  Current np: 685
+Part_0237      5.925029         43340      181       3.18  21-06-2020 06:54:00
+  Particles out: 1  (total out: 5560)  -  Current np: 684
+Part_0238      5.950026         43524      184       3.19  21-06-2020 06:53:51
+  Particles out: 3  (total out: 5563)  -  Current np: 681
+Part_0239      5.975089         43709      185       3.05  21-06-2020 06:53:43
+  Particles out: 2  (total out: 5565)  -  Current np: 679
+Part_0240      6.000078         43893      184       3.26  21-06-2020 06:53:36
+  Particles out: 1  (total out: 5566)  -  Current np: 678
+Part_0241      6.025044         44076      183       7.59  21-06-2020 06:53:27
+  Particles out: 4  (total out: 5570)  -  Current np: 674
+Part_0242      6.050029         44258      182       2.95  21-06-2020 06:53:19
+  Particles out: 2  (total out: 5572)  -  Current np: 672
+Part_0243      6.075033         44440      182       2.91  21-06-2020 06:53:11
+  Particles out: 8  (total out: 5580)  -  Current np: 664
+Part_0244      6.100030         44623      183       9.43  21-06-2020 06:53:03
+  Particles out: 6  (total out: 5586)  -  Current np: 658
+Part_0245      6.125028         44808      185     272.83  21-06-2020 06:53:04
+  Particles out: 4  (total out: 5590)  -  Current np: 654
+Part_0246      6.150103         44994      186     178.89  21-06-2020 06:53:02
+  Particles out: 2  (total out: 5592)  -  Current np: 652
+Part_0247      6.175072         45181      187       2.88  21-06-2020 06:52:54
+Part_0248      6.200052         45365      184       8.99  21-06-2020 06:52:47
+Part_0249      6.225110         45549      184       4.35  21-06-2020 06:52:40
+Part_0250      6.250102         45734      185     432.84  21-06-2020 06:52:46
+Part_0251      6.275085         45920      186       2.97  21-06-2020 06:52:38
+Part_0252      6.300084         46107      187       2.89  21-06-2020 06:52:31
+  Particles out: 3  (total out: 5595)  -  Current np: 649
+Part_0253      6.325044         46292      185       8.38  21-06-2020 06:52:23
+  Particles out: 3  (total out: 5598)  -  Current np: 646
+Part_0254      6.350098         46475      183       4.39  21-06-2020 06:52:16
+  Particles out: 2  (total out: 5600)  -  Current np: 644
+Part_0255      6.375063         46658      183     442.37  21-06-2020 06:52:22
+  Particles out: 5  (total out: 5605)  -  Current np: 639
+Part_0256      6.400018         46841      183       2.81  21-06-2020 06:52:15
+  Particles out: 6  (total out: 5611)  -  Current np: 633
+Part_0257      6.425082         47027      186       2.65  21-06-2020 06:52:07
+  Particles out: 5  (total out: 5616)  -  Current np: 628
+Part_0258      6.450114         47213      186       8.29  21-06-2020 06:52:00
+  Particles out: 3  (total out: 5619)  -  Current np: 625
+Part_0259      6.475109         47398      185       5.10  21-06-2020 06:51:54
+Part_0260      6.500051         47584      186     433.02  21-06-2020 06:51:59
+Part_0261      6.525061         47766      182       2.64  21-06-2020 06:51:52
+Part_0262      6.550023         47948      182       2.72  21-06-2020 06:51:46
+Part_0263      6.575086         48131      183       8.68  21-06-2020 06:51:39
+Part_0264      6.600122         48312      181       3.95  21-06-2020 06:51:32
+Part_0265      6.625041         48495      183     433.37  21-06-2020 06:51:38
+Part_0266      6.650072         48677      182       2.97  21-06-2020 06:51:31
+Part_0267      6.675058         48862      185       2.85  21-06-2020 06:51:24
+  Particles out: 5  (total out: 5624)  -  Current np: 620
+
+*** WARNING: More than 90% of particles were excluded (t:6.67506, nstep:48861)
+
+Part_0268      6.700065         49043      181       8.66  21-06-2020 06:51:17
+  Particles out: 4  (total out: 5628)  -  Current np: 616
+Part_0269      6.725035         49230      187       5.45  21-06-2020 06:51:10
+  Particles out: 2  (total out: 5630)  -  Current np: 614
+Part_0270      6.750020         49416      186     426.47  21-06-2020 06:51:17
+Part_0271      6.775110         49601      185       3.43  21-06-2020 06:51:10
+  Particles out: 1  (total out: 5631)  -  Current np: 613
+Part_0272      6.800051         49786      185       2.72  21-06-2020 06:51:03
+  Particles out: 13  (total out: 5644)  -  Current np: 600
+Part_0273      6.825030         49974      188       2.50  21-06-2020 06:50:56
+  Particles out: 3  (total out: 5647)  -  Current np: 597
+Part_0274      6.850054         50157      183       2.45  21-06-2020 06:50:50
+  Particles out: 5  (total out: 5652)  -  Current np: 592
+Part_0275      6.875087         50340      183       7.15  21-06-2020 06:50:43
+Part_0276      6.900023         50521      181       2.49  21-06-2020 06:50:37
+Part_0277      6.925015         50703      182       2.47  21-06-2020 06:50:30
+Part_0278      6.950039         50885      182       7.97  21-06-2020 06:50:25
+Part_0279      6.975122         51070      185       2.67  21-06-2020 06:50:18
+Part_0280      7.000079         51253      183     446.40  21-06-2020 06:50:25
+Part_0281      7.025117         51436      183       2.66  21-06-2020 06:50:18
+  Particles out: 4  (total out: 5656)  -  Current np: 588
+Part_0282      7.050120         51620      184       2.64  21-06-2020 06:50:12
+Part_0283      7.075011         51806      186       2.45  21-06-2020 06:50:06
+Part_0284      7.100070         51988      182       2.34  21-06-2020 06:50:00
+Part_0285      7.125080         52169      181       2.33  21-06-2020 06:49:53
+Part_0286      7.150044         52350      181       2.33  21-06-2020 06:49:47
+Part_0287      7.175135         52530      180       2.28  21-06-2020 06:49:41
+Part_0288      7.200003         52714      184       7.68  21-06-2020 06:49:35
+Part_0289      7.225027         52894      180       2.83  21-06-2020 06:49:29
+Part_0290      7.250014         53073      179       5.86  21-06-2020 06:49:24
+Part_0291      7.275032         53252      179       4.26  21-06-2020 06:49:18
+Part_0292      7.300085         53433      181       4.02  21-06-2020 06:49:12
+  Particles out: 7  (total out: 5663)  -  Current np: 581
+Part_0293      7.325039         53609      176     444.06  21-06-2020 06:49:19
+  Particles out: 3  (total out: 5666)  -  Current np: 578
+Part_0294      7.350055         53788      179       2.52  21-06-2020 06:49:13
+  Particles out: 3  (total out: 5669)  -  Current np: 575
+Part_0295      7.375080         53968      180       2.51  21-06-2020 06:49:07
+  Particles out: 2  (total out: 5671)  -  Current np: 573
+Part_0296      7.400099         54152      184       2.51  21-06-2020 06:49:01
+Part_0297      7.425039         54330      178       2.29  21-06-2020 06:48:55
+Part_0298      7.450137         54511      181       2.23  21-06-2020 06:48:50
+Part_0299      7.475002         54687      176       2.21  21-06-2020 06:48:44
+Part_0300      7.500127         54864      177       2.15  21-06-2020 06:48:38
+Part_0301      7.525089         55041      177       7.06  21-06-2020 06:48:33
+Part_0302      7.550123         55226      185       2.59  21-06-2020 06:48:28
+Part_0303      7.575059         55403      177       2.20  21-06-2020 06:48:23
+Part_0304      7.600014         55582      179     457.39  21-06-2020 06:48:29
+Part_0305      7.625063         55767      185       2.72  21-06-2020 06:48:24
+Part_0306      7.650030         55948      181       2.50  21-06-2020 06:48:18
+Part_0307      7.675027         56132      184       2.51  21-06-2020 06:48:13
+Part_0308      7.700037         56315      183       2.30  21-06-2020 06:48:07
+Part_0309      7.725034         56496      181       2.28  21-06-2020 06:48:02
+Part_0310      7.750108         56682      186       2.30  21-06-2020 06:47:57
+Part_0311      7.775076         56860      178       2.24  21-06-2020 06:47:51
+Part_0312      7.800069         57039      179       2.32  21-06-2020 06:47:47
+Part_0313      7.825121         57218      179       3.07  21-06-2020 06:47:42
+  Particles out: 5  (total out: 5676)  -  Current np: 568
+Part_0314      7.850125         57397      179       5.64  21-06-2020 06:47:37
+  Particles out: 1  (total out: 5677)  -  Current np: 567
+Part_0315      7.875057         57575      178       2.23  21-06-2020 06:47:32
+Part_0316      7.900126         57754      179       2.26  21-06-2020 06:47:27
+Part_0317      7.925130         57931      177       8.13  21-06-2020 06:47:21
+Part_0318      7.950109         58108      177       2.62  21-06-2020 06:47:16
+Part_0319      7.975013         58284      176     203.58  21-06-2020 06:47:16
+Part_0320      8.000061         58459      175     236.13  21-06-2020 06:47:18
+
+[Simulation finished  21-06-2020 06:47:18]
+Particles of simulation (initial): 6244
+DTs adjusted to DtMin............: 0
+Excluded particles...............: 5677
+Total Runtime....................: 1598.879517 sec.
+Simulation Runtime...............: 1598.814453 sec.
+Time per second of simulation....: 199.850281 sec.
+Steps per second.................: 36.563969
+Steps of simulation..............: 58459
+PART files.......................: 321
+Maximum number of particles......: 6244
+Maximum number of cells..........: 1112
+CPU Memory.......................: 1272320 (1.21 MB)
+ 
+[CPU Timers]
+VA-Init..........................: 0.064835 sec.
+NL-Limits........................: 1.622087 sec.
+NL-MakeSort......................: 2.747512 sec.
+NL-SortData......................: 2.205817 sec.
+NL-OutCheck......................: 0.008259 sec.
+CF-PreForces.....................: 6.340075 sec.
+CF-Forces........................: 1577.137085 sec.
+SU-Shifting......................: 0.000000 sec.
+SU-ComputeStep...................: 6.681481 sec.
+SU-Floating......................: 0.000000 sec.
+SU-Motion........................: 0.305058 sec.
+SU-Periodic......................: 0.000000 sec.
+SU-ResizeNp......................: 0.000000 sec.
+SU-SavePart......................: 1.624711 sec.
+SU-Chrono........................: 0.000000 sec.
+SU-BoundCorr.....................: 0.000000 sec.
+SU-InOut.........................: 0.000000 sec.
+ 
+[Output files]
+- /Run.out..............: Log file of the simulation.
+- CfgInit_Domain.vtk....: Saves the limits of the case and the simulation domain limits.
+- CfgInit_MapCells.vtk..: Saves the cell division of the simulation domain.
+- PartInfo.ibi4.........: Binary file with execution information for each instant (input for PartInfo program).
+- PartOut_???.obi4......: Binary file with particles excluded during simulation (input for PartVtkOut program).
+- Part_????.bi4.........: Binary file with particle data in different instants.
+- Part_Head.ibi4........: Binary file with basic information of simulation data.
+- Run.csv...............: One line CSV file with execution parameters and other simulation data.
+- WavePaddle_mkb0002.csv: Saves motion paddle, elevation and fluid velocity for regular waves.
+ 
+[WARNINGS]
+01. More than 1% of current fluid particles were excluded in one PART (t:0.0250401, nstep:168)
+02. More than 2% of current fluid particles were excluded in one PART (t:0.0751176, nstep:515)
+03. More than 10% of particles were excluded (t:0.125015, nstep:868)
+04. More than 5% of current fluid particles were excluded in one PART (t:0.150014, nstep:1047)
+05. More than 20% of particles were excluded (t:0.175006, nstep:1228)
+06. More than 30% of particles were excluded (t:0.200134, nstep:1411)
+07. More than 10% of current fluid particles were excluded in one PART (t:0.225065, nstep:1590)
+08. More than 40% of particles were excluded (t:0.225065, nstep:1590)
+09. More than 50% of particles were excluded (t:0.250084, nstep:1768)
+10. More than 60% of particles were excluded (t:0.300098, nstep:2134)
+11. More than 70% of particles were excluded (t:0.975047, nstep:7026)
+12. More than 80% of particles were excluded (t:2.52502, nstep:18336)
+13. More than 90% of particles were excluded (t:6.67506, nstep:48861)
+ 
+
+Finished execution (code=0).
+
